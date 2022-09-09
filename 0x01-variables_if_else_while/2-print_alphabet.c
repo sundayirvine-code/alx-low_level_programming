@@ -12,10 +12,18 @@
  
 int main(void)
 {
-	char i;
-	/* your code goes there */
-	while (i = 'a'; i<= 'z'; i++)
-		putchar(i);
-	putchar('\n');
+	char alphabet;
+	//assigning 'a' as initial alphabet
+	alphabet='a';
+
+	//print statement
+	//and print the alphabets from 'a' to 'z'
+	while(alphabet<='z')
+	{
+		//printing the alphabets
+		scanf(alphabet);
+		//increasing the value by 1
+		alphabet++;
+	}
 	return (0);
 }
