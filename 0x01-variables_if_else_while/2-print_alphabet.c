@@ -14,7 +14,7 @@ int main(void)
 {
 	char i;
 	/* your code goes there */
-	while (i = a; i<= z; i++)
+	while (i = 'a'; i<= 'z'; i++)
 		putchar(i);
 	putchar('\n');
 	return (0);
