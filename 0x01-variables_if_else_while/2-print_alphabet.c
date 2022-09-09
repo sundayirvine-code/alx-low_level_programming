@@ -8,7 +8,7 @@ int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	/* your code goes there */
-	for (int i = 0; i< 27; i++)
+	while (int i = 0; i< 27; i++)
 		putchar(alphabet[i]);
 	putchar('\n');
 	return (0);
