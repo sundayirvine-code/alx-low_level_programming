@@ -3,14 +3,19 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* @i - declare charcter variable
+ * main - main function 
+ *
+ * return 0 from main
+ *  
+ */
+ 
 int main(void)
 {
-	int i;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char i;
 	/* your code goes there */
-	while (i = 0; i< 27; i++)
-		putchar(alphabet[i]);
+	while (i = a; i<= z; i++)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
