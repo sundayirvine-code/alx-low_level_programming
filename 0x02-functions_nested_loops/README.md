@@ -11,4 +11,7 @@
 4. isalpha -Write a function that checks for alphabetic character.
 5. Sign  - Write a function that prints the sign of a number.
 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you - Write a function that computes the absolute value of an integer.
+10. a + b  - Write a function that adds two integers and returns the result.
+
+    Prototype: int add(int, int);
  
