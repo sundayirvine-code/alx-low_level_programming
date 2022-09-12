@@ -7,4 +7,5 @@
 
     Prototype: void print_alphabet_x10(void);
     You can only use _putchar twice in your code
-
+3. islower - Write a function that checks for lowercase character. 
+4. isalpha -Write a function that checks for alphabetic character. 
