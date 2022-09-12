@@ -14,4 +14,6 @@
 10. a + b  - Write a function that adds two integers and returns the result.
 
     Prototype: int add(int, int);
- 
+11. 98 Battery Street, the OG -Write a function that prints all natural numbers from n to 98, followed by a new line.
+
+9. Learn your times table   
