@@ -5,8 +5,11 @@
 
 /**
  * main - check the code
+ *
  * print_alphabet - a function 
  * that prints the alphabet in lowercase
+ *
+ * @letter - carries alphabet
  *
  * Return: Always 0.
  */
