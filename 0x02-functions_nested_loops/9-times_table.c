@@ -3,7 +3,7 @@
 
 /**
  * main - check the code
- *times_table - prints the 9 times table
+ *times_table:prints the 9 times table
  *
  * @i -first loop counter
  * @j - second loop counter
