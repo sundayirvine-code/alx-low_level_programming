@@ -1,7 +1,7 @@
 #include "main.h"
 /*
- * main -afunction that 
- * prints out the string _putchar
+ * main -afunction that
+ *prints out the string _putchar
  *
  * @*sh - holds the string _putchar
  *
