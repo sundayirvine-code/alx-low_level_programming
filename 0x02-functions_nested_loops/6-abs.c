@@ -6,14 +6,16 @@
 
 /**
  * main - check the code
- * _abs - computes the absolute value 
+ *_abs - computes the absolute value 
  * of an integer
+ *
+ * @b - input value
  *
  * Return: Always 0.
  */
 
 int _abs(int b)
 {
-	return abs(b);
+	return (abs(b));
 }
 
