@@ -38,7 +38,7 @@ void times_table(void)
 			x += i;
 		}
 		
-		_putchar('\n');
+		printf("\n");
 	}
 }
 
