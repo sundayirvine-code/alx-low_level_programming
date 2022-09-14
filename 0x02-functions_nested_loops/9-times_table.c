@@ -26,11 +26,13 @@ void times_table(void)
 				_putchar(x + '0');
 				break;
 			}
-
+			printf("%d,  ",x);
+			/*
 			_putchar('0' + x);
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			*/
 			
 			x += i;
 		}
