@@ -26,7 +26,7 @@ void print_alphabetx10(void)
 
 		}
 
-		_putchar(letter);
+		_putchar('\n);
 
 	}
 
