@@ -3,7 +3,7 @@
 #include <ctype.h>
 /**
  * main:check the code
- * print_to_98: prints to 98
+ * print_to_98:prints to 98 from value n
  *
  * @n: value to check against
  *
@@ -14,9 +14,9 @@ void print_to_98(int n)
 {
 	if (n < 98)
 	{
-		while(n <= 98)
+		while (n <= 98)
 		{
-			if(n==98)
+			if(n == 98)
 				printf("%d", n);
 			else
 				printf("%d, ", n);
