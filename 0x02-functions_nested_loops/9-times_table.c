@@ -27,7 +27,7 @@ void times_table(void)
 				/*_putchar(x + '0');*/
 				break;
 			}
-			printf("%d,  ",x);
+			printf("%d, ",x);
 			/*
 			_putchar('0' + x);
 			_putchar(',');
