@@ -14,16 +14,16 @@
 
 void times_table(void)
 {
-	int i,j,x;
+	int i, j, x;
 
-	for(i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		x = 0;
 		for (j = 0; j < 10; j++)
 		{
 			if (j == 9)
 			{
-				printf("%d",x);
+				printf("%d", x);
 				/*_putchar(x + '0');*/
 				break;
 			}
@@ -32,11 +32,9 @@ void times_table(void)
 			else
 			{
 				printf("%d, ", x);
-		        }
-			
+			}
 			x += i;
 		}
-		
 		printf("\n");
 	}
 }
