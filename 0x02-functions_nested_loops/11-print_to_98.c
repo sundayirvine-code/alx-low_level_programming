@@ -2,7 +2,10 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - check the code
+ * main:check the code
+ * print_to_98: prints to 98
+ *
+ * @n: value to check against
  *
  * Return: Always 0.
  */
@@ -32,7 +35,7 @@ void print_to_98(int n)
                 {       
                         if(n == 98)
                         {
-                            printf("%d", n);
+                            printf("%d\n", n);
                             return;
                         }
 			else
