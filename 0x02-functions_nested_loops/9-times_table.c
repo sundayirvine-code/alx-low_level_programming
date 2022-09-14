@@ -27,7 +27,7 @@ void times_table(void)
 				/*_putchar(x + '0');*/
 				break;
 			}
-			if (((x+i) / 10) == 0)
+			if (((x + i) / 10) == 0)
 				printf("%d,  ", x);
 			else
 			{
