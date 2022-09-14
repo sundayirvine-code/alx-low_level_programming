@@ -5,9 +5,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *_abs - computes the absolute value 
- * of an integer
+ * main - check code
+ * _abs - return absolute value
  *
  * @b - input value
  *
