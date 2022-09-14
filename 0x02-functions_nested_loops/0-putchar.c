@@ -1,6 +1,9 @@
 #include "main.h"
 /*
- * main - entry point
+ * main -afunction that 
+ * prints out the string _putchar
+ *
+ * @*sh - holds the string _putchar
  *
  * Return: 0 always
  *
