@@ -5,7 +5,6 @@
 
 /**
  * main - check the code
- *
  * print_alphabet - a function 
  * that prints the alphabet in lowercase
  *
@@ -17,7 +16,7 @@
 void print_alphabet(void)
 {
 	int letter;
-	for(letter='a'; letter<='z'; letter++)
+	for (letter= 'a'; letter <= 'z'; letter++)
 	{
 		_putchar(letter);
 	}
