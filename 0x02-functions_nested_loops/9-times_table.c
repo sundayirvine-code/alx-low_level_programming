@@ -23,7 +23,8 @@ void times_table(void)
 		{
 			if (j == 9)
 			{
-				_putchar(x + '0');
+				printf("%d",x);
+				/*_putchar(x + '0');*/
 				break;
 			}
 			printf("%d,  ",x);

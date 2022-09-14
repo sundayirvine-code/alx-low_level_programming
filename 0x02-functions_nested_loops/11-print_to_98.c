@@ -11,46 +11,44 @@
  */
 
 void print_to_98(int n)
-{       
-        /*if the number is lower than 98*/
-        if (n<98)
-        {       
-                while(n<=98)
-                {       
-                        if(n == 98)
-                        {
-                            printf("%d", n);
-                
-                        }
-                        else
-                            printf("%d, ", n);
-			n++;
-                        
-                }
-                printf("\n");
-        }
-        else if (n > 98)
-        {       
-                while(n>=98)
-                {       
-                        if(n == 98)
-                        {
-                            printf("%d\n", n);
-                            return;
-                        }
+{
+	if (n < 98)
+	{
+		while(n <= 98)
+		{
+			if(n==98)
+				printf("%d", n);
 			else
+				printf("%d, ", n);
+			n++;
+		}
+
+		printf("\n");
+	}
+
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			if (n == 98)
 			{
-                        	printf("%d, ", n);
+				printf("%d\n", n);
+				return;
 			}
+			else
+				printf("%d, ", n);
+
 			n--;
-                       
-                }
-                 printf("\n");
-        }
-        else
-        {
-            printf("%d", n);
-            printf("\n");
-        }
+		}
+
+		printf("\n");
+
+	}
+
+	else
+	{
+		printf("%d", n);
+		printf("\n");
+	}
 }
 
