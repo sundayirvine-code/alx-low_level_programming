@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * int _isdigit(int c): function that checks for a 
