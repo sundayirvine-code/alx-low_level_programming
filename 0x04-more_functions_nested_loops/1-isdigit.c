@@ -15,6 +15,8 @@
 
 int _isdigit(int c)
 {
+	c = int(c);
+
 	if (isdigit(c) > 0)
 		return (1);
 	else
