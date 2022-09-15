@@ -1,9 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * int _isupper(int c) - a function
- * that checks for uppercase character
+ * int _isupper(int c) -a function that checks 
+ * for an uppercase character
  *
  * @c: Character to check against
  *
