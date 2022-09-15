@@ -15,20 +15,22 @@
 
 void print_line(int n)
 {
-        if (n == 0 || n < 0)
-        {
-                _putchar('\n');
+	int i, j;
 
-        }
-        else
-        {
-                int i;
-
-                for (i = 0; i < n; i++)
-                {
-                        _putchar('\');
-
-                }
-                _putchar('\n');
-        }
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (i = 0; i < n; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('n');
+		}
+	}
 }
