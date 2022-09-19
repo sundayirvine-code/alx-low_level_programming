@@ -7,7 +7,7 @@
  * @dest: another pointer
  * Return: the pointer to dest
  */
-char *__strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	strcpy(dest , src);
 	return (dest);
