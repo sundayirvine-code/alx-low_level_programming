@@ -7,12 +7,10 @@
  *
  * @*n - pointer variable
  *
- * Return: n. always 98
+ * Return: n. always void
  */
 
 void reset_to_98(int *n)
 {
 	*n = 98;
-
-	return n;
 }
