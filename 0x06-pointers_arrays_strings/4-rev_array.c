@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <iostream> 
+using namespace std;
 
 /**
  * reverse_array - function that reverses an array of integers
@@ -17,5 +19,10 @@ void reverse_array(int *a, int n)
 		temp = a[i];
 		a[i] = a[n - i - 1];
 		a[n - i - 1] = temp;
+	}
+	for(int i = 0; i < n; i++)
+	{
+        	cout << arr[i] << " ";
+    
 	}
 }
