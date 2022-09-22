@@ -12,17 +12,16 @@ using namespace std;
 
 void reverse_array(int *a, int n)
 {
-	int temp;
+	int i;
+	int b;
 
-	for (int i = 0; i < n / 2; i++)
+	i = 0;
+	while (i < n)
 	{
-		temp = a[i];
-		a[i] = a[n - i - 1];
-		a[n - i - 1] = temp;
-	}
-	for(int i = 0; i < n; i++)
-	{
-        	cout << arr[i] << " ";
-    
+		n--;
+		b = a[i];
+		a[i] = a[n];
+		a[n] = b;
+		i++;
 	}
 }
