@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <iostream> 
-using namespace std;
 
 /**
  * reverse_array - function that reverses an array of integers
