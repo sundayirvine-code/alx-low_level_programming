@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void print_chessboard(char board[(*a)][8])
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
@@ -15,7 +15,7 @@ void print_chessboard(char board[(*a)][8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			_putchar(board[i][j]);
+			_putchar(*(*(i + a) + j));
 		}
 		_putchar('\n');
 	}
