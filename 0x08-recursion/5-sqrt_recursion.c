@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * sqrt - finds square roo with recursion
+ * sqr - finds square roo with recursion
  * @n: number we are looking to find its sqrt
  * @i: the possible sqrt
  *
  * Return: i
  */
 
-int sqrt(int n, int i)
+int sqr(int n, int i)
 {
 	if (n < 0)
 		return (-1);
@@ -16,7 +16,7 @@ int sqrt(int n, int i)
 		return (-1);
 	if ((i * i) == n)
 		return (i);
-	return (sqrt(n, i + 1));
+	return (sqr(n, i + 1));
 }
 
 /**
@@ -28,6 +28,6 @@ int sqrt(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (sqr(n, 1));
 }
 
