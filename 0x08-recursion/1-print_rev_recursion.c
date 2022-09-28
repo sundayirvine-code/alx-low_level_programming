@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - reverse
- * @s: pointer to string params
+ * _print_rev_recursion - reverse string
+ * @s: pointer to string
  *
  */
 
