@@ -44,6 +44,8 @@ int prime_number(int n, int i)
     }
     i = i + 1;
     prime_number(n, i);
+
+    return (1);
     
 }
 
