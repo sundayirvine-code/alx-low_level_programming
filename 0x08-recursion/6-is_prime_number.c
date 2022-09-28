@@ -58,11 +58,10 @@ int prime_number(int n, int i)
 
 int is_prime_number(int n)
 {
-	int i = 1;
-	int prime;
-
-	prime = prime_number(n, i);
-
-	return (prime);
+    int i = 1;
+    int prime;
+    
+    prime = prime_number(n, i);
+    
+    return (prime);
 }
-
