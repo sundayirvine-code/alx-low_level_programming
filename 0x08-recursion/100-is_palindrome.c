@@ -23,6 +23,8 @@ int palindrome(char *s, int loop_counter, int first, int last)
 	last = last - 1;
 
 	palindrome(s, loop_counter, first, last);
+
+	return (1);
 }
 
 /**
