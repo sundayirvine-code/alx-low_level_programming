@@ -37,6 +37,7 @@ int palindrome(char *s, int loop_counter, int first, int last)
 int is_palindrome(char *s)
 {
 	int last, first, loop_counter, len, ret;
+
 	len = strlen(s);
 	loop_counter = len / 2;
 	first = 0;
