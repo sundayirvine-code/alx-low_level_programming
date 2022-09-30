@@ -15,5 +15,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	for (count = 0; count < argc; count++)
 	{
 	}
-	return (count);
+	printf("%d\n", count);
+	return (0);
 }
