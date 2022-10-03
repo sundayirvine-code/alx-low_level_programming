@@ -28,22 +28,21 @@ char *str_concat(char *s1, char *s2)
 	s = malloc(sizeof(char) * (l1 + l2 + 1));
 	if (s == NULL)
 	{
+		free(s);
 		return (NULL);
 	}
 
 
 	/* loop through strings */
-	for (i = 0; *s1 != '\0'; i++)
+	for (i = 0; i < l1; i++)
 	{
 		s[i] = s1[i];
 	}
 
-	for (j = 0; *s2 != '\0'; j++)
+	for (j = 0; j < l2; j++, i++)
 	{
 		s[i] = s2[j];
-		i++;
 	}
-	s[i + 1] = '\0';
 
 	return (s);
 }
