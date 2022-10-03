@@ -17,7 +17,9 @@ char *_strdup(char *str)
 
 
 	
-	int j, i, len;
+	int len;
+	int j;
+	int i;
 	char *ptr;
 
 	len = 1;
