@@ -7,7 +7,7 @@
  * in memory which is a copy of the given string
  * @str: input string
  *
- * Return: NULL if str is NULL, pointer on success 
+ * Return: Null if string is a NULL, pointer on success
  */
 
 char *_strdup(char *str)
