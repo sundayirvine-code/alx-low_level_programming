@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * alloc_grid - function that creates a 2D array of int
@@ -11,24 +12,37 @@
 
 int **alloc_grid(int width, int height)
 {
+	int i, j;
+	int **s;
 
-	int i, count, j;
- 
-    	int** arr = (int**)malloc(height * sizeof(int*));
-    	for (i = 0; i < height; i++)
-        	arr[i] = (int*)malloc(width * sizeof(int));
- 
-    
-    	count = 0;
-    	for (i = 0; i < height; i++)
-        	for (j = 0; j < width; j++)
-            		arr[i][j] = ++count;
- 
- 
-    	for (i = 0; i < height; i++)
-        	free(arr[i]);
- 
-    	free(arr);
+	if (width <= 0 || height <= 0)
+		return (NULL);
 
-	return (arr);
+	/* try to allocate memory */
+	s = malloc(sizeof(int *) * height);
+
+	if (s == NULL)
+	{
+		free(s);
+		return(NULL);
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		s[i] = malloc(sizeof(int) * width);
+		if (s[i] == NULL)
+		{
+			for (i-- i >= 0; i--)
+				free(s[i]);
+
+			free(s);
+			return (NULL);
+		}
+	}
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			s[i][j] = 0;
+
+	return (s);
 }
