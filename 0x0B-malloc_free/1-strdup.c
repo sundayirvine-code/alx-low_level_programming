@@ -13,25 +13,25 @@
 char *_strdup(char *str)
 {
     char *s;
-    int j;
+    int j, i;
 
     for (j = 0; *str != '\0'; j++)
     {
         str++;
     }
 
-    s = malloc(sizeof(char) * j);
+    s = malloc(sizeof(char) * (j + 1));
 
     if (s == NULL)
     {
         return (NULL);
     }
 
-    j = 0;
-    while (*str != '\0')
+    i = 0;
+    while (i <= j)
     {
-        str++;
-        j = j + 1;
+	    s[i] = str[i];
+	    i++;
     }
 
     return (s);
