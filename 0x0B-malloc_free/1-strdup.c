@@ -12,17 +12,27 @@
 
 char *_strdup(char *str)
 {
-	char *s;
+    char *s;
+    int i, j;
 
-	if (str == NULL)
-		return (NULL);
+    for (j = 0; *str != '\0'; j++)
+    {
+        str++;
+    }
 
+    s = malloc(sizeof(char) * i);
 
-	s = strdup(str);
+    if (s == NULL)
+    {
+        return (NULL);
+    }
 
-	if (s == NULL)
-		return (NULL);
+    j = 0;
+    while (*str != '\0')
+    {
+        str++;
+        j = j + 1;
+    }
 
-	else
-		return (s);
+    return (s);
 }
