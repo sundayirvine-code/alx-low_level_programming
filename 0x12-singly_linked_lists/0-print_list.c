@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_list - prints nodes in a list and returns number of elements
@@ -9,19 +10,17 @@
 
 size_t print_list(const list_t *h)
 {
-	int coumter = 0;
+	size_t counter = 0;
 
-	if (h -> str == NULL)
-		printf("[0] (nil)"\n);
-
-	else
+	while (h)
 	{
-		while (h)
-		{
-			Printf("[%i] %s\n", h -> len, h -> str);
-			h = h -> next;
-			count+;
-		}
+		if (h == NULL)
+			printf("[0] (nil)\n");
+
+		Printf("[%u] %s\n", h -> len, h -> str);
+		h = h -> next;
+		counter+;
+		
 	}
 	return (counter);
 }
