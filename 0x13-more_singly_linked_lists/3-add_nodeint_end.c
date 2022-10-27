@@ -13,19 +13,28 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	/* create node */
-	listint_t *add = malloc(sizeof(listint_t));
-	if (!add)
-		return (NULL);
+	listint_t *ptr, *temp, *p;
 
-	/* traverse list */
-	listint_t *ptr = *head;
-	while (ptr -> next)
+	if (*head == NULL)
 	{
-		ptr = ptr -> next;
+		p = malloc (sizeof(listint_t));
+		*head = p;
+		p -> n = n;
+		p -> next = NULL;
 	}
-	pr -> next = add;
+	else
+	{
+		ptr = *head;
+		temp = malloc(sizeof(listint_t));
+		temp -> n = n;
+		temp -> next = NULL;
 
-	return (add);
+		while(ptr -> next)
+		{
+			ptr = ptr -> next;
+		}
+		ptr -> next = temp;
+	}
+	return (temp);
 }
 
