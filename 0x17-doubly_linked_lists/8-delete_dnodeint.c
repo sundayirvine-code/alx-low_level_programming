@@ -34,19 +34,17 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		count++;
 	}
 	/* del head node */
-	if (count == 0)
+	if (index == 0)
 	{
-		temp = ptr;
-		ptr = ptr -> next;
-		temp -> next = NULL;
-		ptr -> prev = NULL;
-		free(temp);
-		*head = ptr;		
+		*head = ptr -> next;
+		if(ptr -> next)
+			ptr -> next -> prev = NULL;
+		free(ptr);
 		return (1);
 	}
 
 	/* del last node */
-	if (count == nodes - 1)
+	if (index == nodes - 1)
 	{
 		temp = ptr -> prev;
 		temp -> next = NULL;
