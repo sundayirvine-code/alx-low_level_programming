@@ -49,7 +49,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new_node);
 	}
 
-	/* insert middle and end */
+	/* insert middle */
 	while(count != idx)
 	{
 		ptr = ptr -> next;
