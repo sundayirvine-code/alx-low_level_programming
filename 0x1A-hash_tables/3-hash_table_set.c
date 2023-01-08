@@ -9,12 +9,15 @@
  * Return: 1 if it succeeded, 0 otherwise
  */
 
-int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = hash_djb2(key) % ht ->size
+	unsigned long int index = key_index((const unsigned char *)key, ht -> size);
 	hash_node_t *head = ht -> array[index];
 	hash_node_t *ptr = head;
 	hash_node_t *new = NULL;
+
+	if(ht == NULL || *key == '\0' || *value == '\n')
+		return (0);
 
 	/*if key already exists */
 	while(!ptr)
@@ -22,7 +25,8 @@ int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value
 		/*if keys match*/
 		if (strcmp(ptr -> key, key) == 0)
 		{
-			strcpy(ptr -> value, value);
+			free(ptr -> value);
+			ptr -> value = strdup(value);
 			return (1);
 		}
 		ptr = ptr -> next;
@@ -34,8 +38,9 @@ int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value
 	new = malloc(sizeof(hash_node_t));
 	if(!new)
 		return (0);
-	strcpy(new -> key, key);
-	strcpy(new -> value, value);
+	
+	new -> key = strdup(key);
+	new -> value = strdup(value);
 	ht -> array[index] = new;
 	new -> next = head;
 
