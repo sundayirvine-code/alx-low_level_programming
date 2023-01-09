@@ -3,6 +3,34 @@
 #include <stdio.h>
 #include "hash_tables.h"
 
+
+/**
+ * add_to_sorted_list - Add a node to a sorted linked list
+ * @node: node to add
+ * @ht: hash table containing the sorted linked list
+ */
+void add_to_sorted_list(shash_node_t *node, shash_table_t *ht)
+{
+	shash_node_t *temp;
+
+	if (ht->shead == NULL)
+	{
+		node->sprev = NULL;
+		node->snext = NULL;
+		ht->shead = node;
+		ht->stail = node;
+		return;
+	}
+
+	temp = ht->shead;
+	while (temp != NULL)
+	{
+		if (strcmp(temp->key, node->key) > 0)
+		{
+			node->sprev = temp->sprev;
+			node->snext = temp;
+			if (temp->sp
+
 /**
  * shash_table_create - Create a sorted hash table
  * @size: size of the array
